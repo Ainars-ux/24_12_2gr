@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Temperatūras ieraksti</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="../static/style.css">
+=======
+    <link rel="stylesheet" href="/static/style.css">
+>>>>>>> 8e7cfa147df5f2fda79925a38d68d10710524a16
 </head>
 <body>
     <h1>Temperatūras ieraksti</h1>
     <form id="tempForm">
         <label for="date">Datums:</label>
         <input type="date" id="date" required>
+<<<<<<< HEAD
         <label for="mini_temp">Mazākā temperatūra</label>
         <input type="number"  step="0.1" id="min_temp" required>
         <label for="max_temp">Lielākā temperatūra</label>
@@ -26,6 +31,22 @@
                 <th>Datums</th>
                 <th>Mazākā temperatūra</th>
                 <th>Lielākā temperatūra </th>
+=======
+        <label for="min_temp">Mazākā temperatūra</label>
+        <input type="number" step="0.1" id="min_temp" required>
+        <label for="max_temp">Lielākā temperatūra</label>
+        <input type="number" step="0.1" id="max_temp" required>
+        <button type="submit">Pievienot</button>
+    </form>
+
+    <h2>Tamperatūru saraksts</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Datums</th>
+                <th>Mazākā temperatūra</th>
+                <th>Lielākā temperatūra</th>
+>>>>>>> 8e7cfa147df5f2fda79925a38d68d10710524a16
                 <th>Vidējā temperatūra</th>
             </tr>
         </thead>
@@ -36,6 +57,7 @@
     <p id="avgTemp">Vidējā temperatūra visām dienām:</p>
 
     <script src="/static/script.js"></script>
+<<<<<<< HEAD
 
     <script>
         function calculateAverage() {
@@ -56,3 +78,9 @@
  </html>
 
  
+=======
+
+</body>
+
+</html>
+>>>>>>> 8e7cfa147df5f2fda79925a38d68d10710524a16
