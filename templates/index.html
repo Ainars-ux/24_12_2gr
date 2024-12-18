@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Temperatūras ieraksti</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
     <h1>Temperatūras ieraksti</h1>
@@ -36,6 +36,20 @@
     <p id="avgTemp">Vidējā temperatūra visām dienām:</p>
 
     <script src="/static/script.js"></script>
+
+    <script>
+        function calculateAverage() {
+            const temperatures = [10, 12, 15, 8, 20]; // Piemēra dati
+            const sum = temperatures.reduce((a, b) => a + b, 0);
+            const average = sum / temperatures.length;
+            document.getElementById('average').textContent = average.toFixed(2);
+        }
+    
+        window.onload = calculateAverage;
+    </script>
+
+<input type="text" id="name" required placeholder="Ievadiet vārdu">
+    
 
 </body>
 
